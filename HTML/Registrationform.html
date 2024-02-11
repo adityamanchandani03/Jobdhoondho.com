@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/Registerform.css">
+    <link rel="icon" type="image/x-icon" href="../images/JobDhoondo.com.png">
+   
+   
+</head>
+<body>
+    <div class="container" id="container">
+        <form>
+
+            <div class="before">
+                <h2>Find a job & grow your career</h2>
+
+                <label for="full name">Full name</label>
+                <input type="name" class="name" id="name" placeholder="What is your name?">
+
+                <label for="email id">Email ID</label>
+                <input type="email" class="email id" id="email id" placeholder="@email.com">
+                <p> We'll send you relevant jobs in your mail</p>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder=" Create a password for your account">
+                <p> Minimum 6 characters required</p>
+                <div class="mobile_no">
+                    <label for="mobile no.">Mobile number</label>
+                    <span>+91</span>
+                    <input type="number" id="mobile no." placeholder="Mobile Number">
+                    <p> Recruiters will call you on this number</p>
+                </div>
+                <div class="confirm-div">
+                    <p class="text">
+                        By clicking Register. you agree to the
+                        <a href="https://www.naukri.com/termsconditions#g1" target="_blank" class=""> Terms and
+                            Conditions </a>
+                        &
+                        <a href="https://www.naukri.com/privacypolicy" target="_blank" class=""> Privacy Policy </a>
+                        of job Dhundo.com
+                    </p>
+                    <!-- <button class="register"><input type="register">Register now</button> -->
+                    <input type="button" class="button" value="Register now" onclick="data()">
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="register_box" id="register_box">
+        <h4 class="message">Registration Successfull <img src="../images/check-mark.png" alt="" width="20px"> </h4>
+    </div>
+
+    <script src="../scripts/register.js"></script>
+    
+</body>
+</html>

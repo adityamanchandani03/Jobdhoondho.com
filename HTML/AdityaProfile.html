@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="icon" type="image/x-icon" href="../images/JobDhoondo.com.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/jobs.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/profile.css">
+    <link rel="stylesheet" href="../CSS/progressbar.css">
+
+
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <section class="head">
+        <nav>
+            <a href="../HTML/index.html"><img src="../images/JobDhoondo.com.png" id="logo" alt="logo" width="30%"></a>
+            <div class="mobilesearch">
+                <div class="searchbar-main2">
+                    <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                    <div class="Search-Keyword2 searchcol2">
+                        <input type="text" name="Keyword" id="keyword" class="keyword"
+                            placeholder="Search Jobs here..."><span class="search-icon"><a href="#"><i
+                                    class="fa fa-search" aria-hidden="true"></i></a></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="small-search-bar">
+                <input type="text" name="Keyword" id="small-bar" class="small-bar"
+                    placeholder="Search Jobs here..."><span class="search-icon"><a href="#"><i class="fa fa-search"
+                            aria-hidden="true"></i></a></span>
+            </div>
+            <div class="profile_nav_img">
+                <a href="../HTML/profile.html"><img src="../images/myimg.jpeg" alt="" class="nav_profile" width="20px"></a>
+        </div>
+
+            <div class="nav-links" id="navlinks">
+                <div class="close-btn">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+                <ul>
+                    <li><a href="../HTML/index.html">HOME</a></li>
+                    <li><a href="../HTML/jobs.html">JOBS</a></li>
+                    <li><a href="../HTML/companies.html">COMPANIES</a></li>
+                    <li>
+                        <a href="../HTML/profile.html"><img src="../images/myimg.jpeg" alt="" class="nav_profile" width="20px"></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <span class="bars"> <i class="fa fa-bars" onclick="showMenu()"></i></span>
+        </nav>
+    </section>
+    <!-- Profile Main Section -->
+    <section class="profile">
+        <div class="profile-main">
+            <div class="profile_sec_1">
+                <div class="profile-bg_img" onclick="">
+
+                </div>
+                <div class="user-profile-img">
+                    <img src="../images/myimg.jpeg" alt="" width="130px" id="output">
+
+                    <div class="input-profile">
+                        <input name="photo" class="profile-img-input" type="file" accept="image/*"
+                            onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])" />
+                        <span class="input-profile-logo">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+                <div class="profile-basic-details">
+                    <div class="personal_detail">
+                        <h2 class="user_name" id="user_name">Aditya Manchandani</h2>
+                        <p class="profile_headline" id="profile_headline">Aspiring Web Designer | HTML | CSS |
+                            JAVASCRIPT |
+                            TAILWIND | BOOTSTRAP | C++ | JAVA | Exploring New Opportunities</p>
+                        <p class="contact_info info">
+                            <span class="mob_no" id="mob_no">7000535761</span>
+                            <span class="pipe">|</span>
+                            <span class="email" id="email">aditya@gmail.com</span>
+                        </p>
+                        <p class="user_location info">Burhanpur , Madhya Pradesh</p>
+                    </div>
+                    <div class="edu_detail">
+                        <div class="edu_detail_1">
+                            <img src="../images/certificate.png" alt="" class="edu_img" width="40px">
+                            <p class="User_education"><a href="https://www.sevasadancollege.com/" target="_blank">Seva
+                                    Sadan
+                                    College</a></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="user_box" id="user_about">
+                <div class="box_head">
+                    <h2>About</h2>
+                    <h2><i class="fa fa-pencil" aria-hidden="true"></i></h2>
+                </div>
+                <p class="user_about_details" id="user_about_details">
+                    Pursuing my bachelor's degree in Computer Application from Seva Sadan College and developed my
+                    web development skills in HTML, CSS, JavaScript and programming skills in C++ & Java
+                </p>
+            </div>
+            <div class="user_box" id="user_education_box">
+                <div class="box_head">
+                    <h2>Education</h2>
+                    <h2><i class="fa fa-pencil" aria-hidden="true"></i></h2>
+                </div>
+                <div class="user_education" id="user_education">
+                    <img src="../images/certificate.png" alt="" class="edu_logo" height="50px">
+                    <div class="education_details">
+                        <h4 id="college_name">Seva Sadan College , Burhanpur</h4>
+                        <p id="course_name">Bachelor's in Computer Application</p>
+                        <p id="yeartoyear">2021 - 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user_box" id="user_about">
+                <div class="box_head">
+                    <h2>Skills</h2>
+                    <h2><i class="fa fa-pencil" aria-hidden="true"></i></h2>
+
+                </div>
+                <div class="user_skills" id="user_skills">
+                    <ul class="skills_list" id="skills_list">
+                        <li class="skills">
+                            <h4 class="user_skill_name">HTML</h4>
+                            <div class="progress pro-1">
+                                <span class="title timer" data-from="0" data-to="85" data-speed="1800">85</span>
+                                <div class="overlay"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <h4 class="user_skill_name">CSS</h4>
+                            <div class="progress pro-2">
+                                <span class="title timer" data-from="0" data-to="85" data-speed="1800">90</span>
+                                <div class="overlay"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <h4 class="user_skill_name">JavaScript</h4>
+                            <div class="progress pro-3">
+                                <span class="title timer" data-from="0" data-to="85" data-speed="1800">50</span>
+                                <div class="overlay"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <h4 class="user_skill_name">Tailwind CSS</h4>
+                            <div class="progress pro-4">
+                                <span class="title timer" data-from="0" data-to="85" data-speed="1800">85</span>
+                                <div class="overlay"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </li>
+                        <li class="skills">
+                            <h4 class="user_skill_name">Bootstrap</h4>
+                            <div class="progress pro-5">
+                                <span class="title timer" data-from="0" data-to="85" data-speed="1800">50</span>
+                                <div class="overlay"></div>
+                                <div class="left"></div>
+                                <div class="right"></div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="main-footer">
+            <div class="footer-col foot-logo">
+
+                <img src="../images/JobDhoondo.com.png" alt="" width="15%">
+
+                <p> Connect With Us</p>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+
+            </div>
+            <div class="footer-col col2 ">
+                <ul class="foot-menu-list main list1 ">
+                    <li onclick="location.href='../HTML/Aboutuslogin.html' ">About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Fraud Alert</li>
+
+
+                </ul>
+
+                <ul class="foot-menu-list main list2 ">
+                    <li>Report Issue</li>
+                    <li>Help Center</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-2">
+            <h5>&copy All right Reversed.<a class="text-green ml-2" href="../HTML/index.html"
+                    target="_blank">JobDhoondo.com</a>
+            </h5>
+        </div>
+    </section>
+
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

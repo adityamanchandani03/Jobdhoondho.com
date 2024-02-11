@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobDhoondo.com</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/JobDhoondo.com.png">
+    <!-- <link rel="stylesheet" href="../CSS/loginform.css"> -->
+
+</head>
+
+<body onscroll="onScroll()">
+    <section class="header">
+        <nav>
+            <a href="../HTML/indexlogin.html"><img src="../images/JobDhoondo.com.png" id="logo" alt="logo" width="30%"></a>
+            <div class="mobilesearch">
+                <div class="searchbar-main2">
+                    <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                    <div class="Search-Keyword2 searchcol2">
+                        <input type="text" name="Keyword" id="keyword" class="keyword"
+                            placeholder="Search Jobs here...">
+                    </div>
+
+                </div>
+            </div>
+            <div class="profile_nav_img">
+                <a href="../HTML/profile.html"><img src="../images/user.png" alt="" class="nav_profile"
+                        width="20px"></a>
+            </div>
+
+            <div class="nav-links" id="navlinks">
+                <div class="close-btn">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+                <ul>
+                    <li><a href="../HTML/indexlogin.html">HOME</a></li>
+                    <li><a href="../HTML/jobslogin.html">JOBS</a></li>
+                    <li><a href="../HTML/companieslogin.html">COMPANIES</a></li>
+                    <li>
+                        <a href="../HTML/profile.html"><img src="../images/user.png" alt="" class="nav_profile" width="20px"></a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <span class="bars"> <i class="fa fa-bars" onclick="showMenu()"></i></span>
+        </nav>
+        <!-- Search bar -->
+        <div class="searchbar-main">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="Search-Keyword searchcol">
+                <input type="text" name="Keyword" id="keyword" class="keyword"
+                    placeholder="Enter Skills / Destinations / Companies">
+            </div>
+            <div class="pipe">|</div>
+            <div class="Search-Location searchcol">
+                <input type="text" name="Location" id="location" class="location" placeholder="Location">
+
+            </div>
+
+            <div class="Search-btn">
+                Search
+            </div>
+        </div>
+
+        <div class="text-box">
+            <h1>Find Your Dream Job Now</h1>
+            <p>Many Opportunities To Explore</p>
+            <li>
+                <a href="" class="register">Apply</a>
+            </li>
+        </div>
+
+
+
+    </section>
+    <section class="categories">
+
+        <div class="division-row" >
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Remote</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>MNC</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-inr" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Banking Finance</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Startup</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Data Science</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <span class="type-logo">
+                    <img src="images/certificate.png" alt="" width="25px">
+                </span>
+                <div class="division-type">
+                    <p>Internship</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Marketing</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html' ">
+                <i class="fa fa-line-chart" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>Software & IT</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <div class="division-col" onclick="location.href='../HTML/jobslogin.html'">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+                <div class="division-type">
+                    <p>HR</p>
+                </div>
+                <div class="more-btn">
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="topCompanies">
+        <h2>TOP COMPANIES HIRING NOW</h2>
+        <div class="typesCom-row">
+
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/mnc.html'">
+                <div class="col-head">
+                    <h3>MNC's</h3> <a href="../HTML/Sub Companies After Login/mnc.html"><i class="fa fa-angle-right"
+                            aria-hidden="true"></i></a>
+                </div>
+                <p>1.4k Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/MNCS/hinduja global solutions (HGS).gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/MNCS/tcs.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/MNCS/tatapower.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Google.png" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Startups.html'">
+                <div class="col-head">
+                    <h3>Startups</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/startups logos/Groww startup.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/startups logos/navi.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/startups logos/razorpay startup.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/startups logos/zoomcar startup.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/product.html'">
+                <div class="col-head">
+                    <h3>Product</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>600+ Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/product/canalys.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/product/Egain.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/product/jungles works.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/product/flipkart.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Banking&finance.html'">
+                <div class="col-head">
+                    <h3>Banking & Finance</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>200+ Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/Banking & finance/Aditya Birla Finance.gif" alt="" class="Each-logo"
+                        width="30px">
+                    <img src="../images/Banking & finance/Bandhan Bank.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Banking & finance/IDFC FIRST Bank.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Banking & finance/ICICI Bank.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Hospitality.html'">
+                <div class="col-head">
+                    <h3>Hospitality</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>110 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/Hospitality/BCD Travel.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Hospitality/Hotel Hub.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Hospitality/Oberoi Hotels & Resort.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Hospitality/Indian Hotels Company (IHCL).gif" alt="" class="Each-logo"
+                        width="30px">
+                </div>
+            </div>
+
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Fintech.html'">
+                <div class="col-head">
+                    <h3>Fintech</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/Fintech/Airtel Payments Bank.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Fintech/Mpokket.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Fintech/National Payments Corporation Of India (NPCI).gif" alt=""
+                        class="Each-logo" width="30px">
+                    <img src="../images/Fintech/KhataBook.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Edtech.html'">
+                <div class="col-head">
+                    <h3>Edtech</h3> <a href="../HTML/jobs.html"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/Edtech/Eduncle.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Edtech/Hello English.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Edtech/Digital Vidya.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Edtech/Physicswallah.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/healthcare.html'">
+                <div class="col-head" >
+                    <h3>Healthcare</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/healthcare/Apollo pharmacy.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/healthcare/cipla.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/healthcare/mankind pharma.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/healthcare/Avantor.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/internet.html'">
+                <div class="col-head">
+                    <h3>Internet</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/Internet/17 live.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Internet/Amazon.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Internet/car dekho.com" alt="" class="Each-logo" width="30px">
+                    <img src="../images/Internet/agenext technologies.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+            <div class="typesCom-col" onclick="location.href='../HTML/Sub Companies After Login/Manufacturing.html'">
+                <div class="col-head">
+                    <h3>Manufaturing</h3> <a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                </div>
+                <p>500 Actively hiring</p>
+                <div class="logos">
+                    <img src="../images/manufacturing/Advance auto parts.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/manufacturing/johnson controls.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/manufacturing/Tata motors.gif" alt="" class="Each-logo" width="30px">
+                    <img src="../images/manufacturing/toyota tsusho.gif" alt="" class="Each-logo" width="30px">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-------Companies-------->
+    <section class="companies">
+        <h2>FEATURED COMPANIES ACTIVELY HIRING</h2>
+        <div class="btn">
+            <!-- <button id="scroll" onclick="scroll_y()">scroll</button> -->
+        </div>
+        <div class="row" id="scroll_row">
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/MNCS/tatapower.gif" alt=""
+                            width="50px"></div>
+                    <h3>Tata Power</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/Google.png" alt="" width="50px"></div>
+                    <h3>Google</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Lead ing Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/startups logos/Groww startup.gif" alt="" width="50px"></div>
+                    <h3>Grow</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Finance Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/Hospitality/Burger King.gif" alt="" width="50px"></div>
+                    <h3>Burger King</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+
+            </div>
+
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/Fintech/FreeCharge.gif" alt="" width="50px">
+                    </div>
+                    <h3>Freecharge</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/startups logos/testbook startup.gif" alt="" width="50px">
+                    </div>
+                    <h3>TextBook</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/Edtech/Physicswallah.gif" alt="" width="100px"
+                            style="padding-bottom: 10px;"></div>
+                    <h3>Physicswallah</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/Fintech/Highradius.gif" alt="" width="100px">
+                    </div>
+                    <h3>Highradius</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/startups logos/navi.gif" alt="" width="50px"></div>
+                    <h3>Navi Technologies</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+            <div class="companies-col" id="exe">
+                <div class="Details">
+                    <div class="image"><img src="../images/startups logos/idfc.gif" alt="" width="50px"></div>
+                    <h3>IDFC FIRST Bank</h3>
+                    <p><img src="../images/staryellow.png" alt="" width="10px"> <b>4.5</b> | 499 reviews </p>
+                    <p class="note">Top Leading Tech Company </p>
+                    <button class="viewjobs">View Jobs</button>
+                </div>
+            </div>
+        </div>
+        <div class="movement-btns">
+            <button class="left" onclick="scroll_left()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button class="right" onclick="scroll_right()"><i class="fa fa-chevron-right"
+                    aria-hidden="true"></i></button>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="main-footer">
+            <div class="footer-col foot-logo">
+
+                <img src="../images/JobDhoondo.com.png" alt="" width="15%">
+
+                <p> Connect With Us</p>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+
+            </div>
+            <div class="footer-col col2 ">
+                <ul class="foot-menu-list main list1 ">
+                    <li onclick="location.href='../HTML/Aboutuslogin.html' ">About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Fraud Alert</li>
+
+
+                </ul>
+
+                <ul class="foot-menu-list main list2 ">
+                    <li>Report Issue</li>
+                    <li>Help Center</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-2">
+            <h5>&copy All right Reversed.<a class="text-green ml-2" href="../HTML/index.html"
+                    target="_blank">JobDhoondo.com</a>
+            </h5>
+        </div>
+
+    </section>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>

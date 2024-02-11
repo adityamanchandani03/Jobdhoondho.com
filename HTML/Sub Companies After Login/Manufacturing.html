@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/jobs.css">
+    <link rel="stylesheet" href="../../CSS/companies.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../../images/JobDhoondo.com.png">
+    <link rel="stylesheet" href="../../CSS/loginform.css">
+
+
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <section class="head">
+        <nav>
+            <a href="../indexlogin.html"><img src="../../images/JobDhoondo.com.png" id="logo" alt="logo"
+                width="30%"></a><div class="mobilesearch">
+                <div class="searchbar-main2">
+                    <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+                    <div class="Search-Keyword2 searchcol2">
+                        <input type="text" name="Keyword" id="keyword" class="keyword"
+                            placeholder="Search Jobs here..."><span class="search-icon"><a href="#"><i
+                                    class="fa fa-search" aria-hidden="true"></i></a></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="small-search-bar">
+                <input type="text" name="Keyword" id="small-bar" class="small-bar"
+                    placeholder="Search Jobs here..."><span class="search-icon"><a href="#"><i class="fa fa-search"
+                            aria-hidden="true"></i></a></span>
+            </div>
+            <div class="profile_nav_img">
+                <a href="../HTML/profile.html"><img src="../images/user.png" alt="" class="nav_profile"
+                        width="20px"></a>
+            </div>
+
+            <div class="nav-links" id="navlinks">
+                <div class="close-btn">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                </div>
+                <ul>
+                    <li><a href="../indexlogin.html">HOME</a></li>
+                    <li><a href="../jobslogin.html">JOBS</a></li>
+                    <li><a href="../companieslogin.html">COMPANIES</a></li>
+                    <li>
+                        <a href="../profile.html"><img src="../../images/user.png" alt="" class="nav_profile" width="20px"></a>
+                    
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <span class="bars"> <i class="fa fa-bars" onclick="showMenu()"></i></span>
+        </nav>
+    </section>
+
+
+    <!-- Companies Post Section -->
+    <section class="Main-Companies">
+        <div class="Companies-p  jobs-main">
+            <div class="filter-btn">
+                <button onclick="showfilter()"> <i class="fa fa-filter" aria-hidden="true"></i> Filters</button>
+            </div>
+            <div class="filters" id="filters">
+                <div class="jobs-col col1 ">
+                    <div class="filter-head">
+                        <h3>All Filters</h3>
+                        <div class="filter-close-btn">
+                            <i class="fa fa-times" onclick="hidefilter()"></i>
+                        </div>
+                    </div>
+
+                    <div class="option-list work-mode">
+                        <h4>Company Type</h4>
+
+                        <ul class="options">
+                            <li><input type="checkbox" name="Comapanytype" checked>Foreign MNC</li>
+                            <li><input type="checkbox" name="Comapanytype">Corporate</li>
+                            <li><input type="checkbox" name="Comapanytype" checked>Indian MNC</li>
+                            <li><input type="checkbox" name="Comapanytype" >Startup</li>
+
+                            <!-- <h5 class="viewmore-btn">View More</h5> -->
+
+                        </ul>
+
+                    </div>
+                    <div class="option-list work-mode">
+                        <h4>Location</h4>
+                        <div class="search_bar_filter search_locations">
+                            <span class="filter_search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input type="search" name="Filter_search_bar" class="filter_search" id="search_locations"
+                                placeholder="Search Location">
+                        </div>
+                        <ul class="options options_detail_list">
+                            <li><input type="checkbox" name="Comapanytype">Bengaluru</li>
+                            <li><input type="checkbox" name="Comapanytype">Delhi / NCR</li>
+                            <li><input type="checkbox" name="Comapanytype">Mumbai</li>
+                            <li><input type="checkbox" name="Comapanytype">Ahmedabad</li>
+                            <li><input type="checkbox" name="Comapanytype">Hyderabad</li>
+                            <li><input type="checkbox" name="Comapanytype">Pune</li>
+                            <li><input type="checkbox" name="Comapanytype">Kolkata</li>
+                            <li><input type="checkbox" name="Comapanytype">Chennai</li>
+                            <li><input type="checkbox" name="Comapanytype">Gurugram</li>
+                            <li><input type="checkbox" name="Comapanytype">Jaipur</li>
+
+                        </ul>
+                        <h5 class="viewmore-btn">View More</h5>
+
+                    </div>
+                    <div class="option-list work-mode">
+                        <h4>Industry</h4>
+                        <div class="search_bar_filter search_industry">
+                            <span class="filter_search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input type="search" name="Filter_search_bar" class="filter_search" id="search_industry"
+                                placeholder="Search Industry">
+                        </div>
+
+                        <ul class="options">
+                            <li><input type="checkbox" name="Comapanytype" >
+                                <p>MNC's</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Internet</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Software Product</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Fintech / Payment</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype" checked>
+                                <p>E-learning / Edtech</p>
+                            </li>
+
+                            <h5 class="viewmore-btn">View More</h5>
+
+                        </ul>
+                    </div>
+                    <div class="option-list work-mode">
+                        <h4>Experience</h4>
+                        <ul class="check-btns">
+                            <li class="check-btn-li" id="first-li" value="1" onclick="click_me('first-li')">Experienced
+                            </li>
+                            <li class="check-btn-li" id="second-li" value="0" onclick="click_me('second-li')">Entry
+                                level</li>
+                        </ul>
+                    </div>
+                    <div class="option-list work-mode">
+                        <h4>Department</h4>
+                        <div class="search_bar_filter search_department">
+                            <span class="filter_search_icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                            <input type="search" name="Filter_search_bar" class="filter_search" id="search_department"
+                                placeholder="Search Department">
+                        </div>
+                        <ul class="options options_detail_list">
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Customer Success, Service & Operations</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Engineering - Software & QA</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Sales & Business Development</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Finance & Accounting</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Data Science & Analytics</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>IT & Information Security</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Human Resources</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Marketing & Communication</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Project & Program Management</p>
+                            </li>
+                            <li><input type="checkbox" name="Comapanytype">
+                                <p>Research & Development</p>
+                            </li>
+
+                        </ul>
+                        <h5 class="viewmore-btn">View More</h5>
+
+                    </div>
+
+
+
+
+                    <div class="btns">
+                        <button class="register">Apply</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="maincompanies-col jobs-col col2">
+                <div class="breadcrums">
+                    <strong class="current-page">12</strong> of <span id="total-pages">120</span> Results
+                </div>
+                <div class="company-post">
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Advance auto parts</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/Advance auto parts.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.0</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">590k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                <span class="tags">IT Services & Consulting</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Air liquedo</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/air liquedo.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.5</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.7k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Alpla</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/Alpla.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.1</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.5k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                <span class="tags">IT Services & Consulting</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Everest Industries</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/Everest industries.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.8</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">300+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                <!-- <span class="tags">Finance & Banking</span> -->
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Fosroc Chemicals</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/fosroc chemicals.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.6</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.8k reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Hyundai Motor</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/hyundai motor.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.2</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">1.5k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                <span class="tags">IT Services & Consulting</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Hyundai Motor</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/hyundai motor.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.9</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">8.2k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">MNC</span>
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Infra.Market.</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/infra.market.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.5</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.9k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Startup</span>
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Johnson Controls</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/johnson controls.gif" alt="google"
+                                        width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.1</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">3.5k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <div class="tags-parent"> <span class="tags">Indian MNC</span></div>
+                                <div class="tags-parent"> <span class="tags">Manufacturing</span></div>
+
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Kia</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/kia.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.9</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">4.7k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Startup</span>
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Magna</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/magna.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.6</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.5k reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Indian MNC</span>
+                                <span class="tags">manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Perto</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/perto.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">4.2</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.8k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                                <span class="tags">IT Services & Consulting</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Royal Enfield.</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/Royal enfield.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.5</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.6k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                    <div class="posts job-post">
+                        <a href="#" class="job-link" id="company-links">
+                            <div class="job-post-head">
+                                <h3 class="job-heading" id="job-heading">Sandhar Technologies</h3>
+                                <div class="image">
+                                    <img src="../../images/manufacturing/sandhar technologies.gif" alt="google" width="50px">
+                                </div>
+                            </div>
+                            <div class="company-rating">
+                                <span class="ratings" id="ratings"><img src="../../images/staryellow.png" alt=""
+                                        width="15px">3.5</span>
+                                <span class="pipe">|</span> <span class="reviews" id="reviews">2.7k+ reviews</span>
+                            </div>
+                            <div class="main-comapany-tags">
+                                <span class="tags">Indian MNC</span>
+                                <span class="tags">Manufacturing</span>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="main-footer">
+            <div class="footer-col foot-logo">
+
+                <img src="../../images/JobDhoondo.com.png" alt="" width="15%">
+
+                <p> Connect With Us</p>
+                <div class="icon">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-linkedin"></i>
+                </div>
+
+            </div>
+            <div class="footer-col col2 ">
+                <ul class="foot-menu-list main list1 ">
+                    <li onclick="location.href='../HTML/Aboutuslogin.html' ">About Us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Fraud Alert</li>
+
+
+                </ul>
+
+                <ul class="foot-menu-list main list2 ">
+                    <li>Report Issue</li>
+                    <li>Help Center</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="footer-2">
+            <h5>&copy All right Reversed.<a class="text-green ml-2" href="../../HTML/index.html"
+                    target="_blank">JobDhoondo.com</a>
+            </h5>
+        </div>
+
+    </section>
+    <!-- Scripts -->
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jobs.js"></script>
+    <script src="../../scripts/company.js"></script>
+</body>
+
+</html>
