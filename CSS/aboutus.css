@@ -1,0 +1,122 @@
+/* About us main section  */
+.main-about-section {
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.main-about-section .team_img {
+    width: 65%;
+    margin: 40px auto;
+}
+
+.main-about-section .aboutus_headline {
+    /* height: 200px; */
+    margin: 10% auto;
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-about-section .aboutus_headline .headline {
+    width: 400px;
+    margin: 0 5%;
+    /* background-color: rebeccapurple; */
+    font-size: 12px;
+}
+
+.main-about-section .team_members {
+    margin: 10% auto;
+    width: 70%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    justify-content: space-around;
+
+}
+
+.main-about-section .team_members .members {
+    width: 300px;
+    height: 550px;
+    padding: 10px;
+    /* background-color: blue; */
+}
+
+.main-about-section .team_members .image {
+    width: 100%;
+    height: 400px;
+
+}
+
+.main-about-section .team_members .member_intro {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.main-about-section .team_members .member_intro p {
+    color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+.main-about-section .team_members .member_intro a img {
+    margin: 10px 0;
+}
+
+@media (max-width:670px) {
+    .main-about-section .team_img {
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .main-about-section .aboutus_headline {
+        position: relative;
+        display: block;
+        width: 95%;
+    }
+
+    .main-about-section .aboutus_headline img {
+        width: 180px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 0.25;
+
+    }
+
+    .main-about-section .aboutus_headline .headline {
+        width: auto;
+
+    }
+    .main-about-section .team_members {
+        margin: 10% 10px;
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        width: 95%;
+    }
+    .main-about-section .team_members::-webkit-scrollbar {
+        display: none;
+    }
+    .main-about-section .team_members .members {
+        width: 200px;
+        height: 450px;
+        padding: 5px;
+        /* background-color: blue; */
+
+        text-align: left;
+        font-size: small;
+    }
+    .main-about-section .team_members .image {
+        width: 200px;
+        height: 250px;
+    
+    }
+
+}

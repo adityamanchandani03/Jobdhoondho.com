@@ -1,0 +1,139 @@
+body {
+    background: #f8f9fa;
+}
+
+.before {
+    width: 50%;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    /* border: 1.5px solid rgba(129, 128, 128, 0.804); */
+}
+
+input {
+    border: 1px solid rgb(230, 225, 225);
+    border-radius: 13px;
+    margin: 10px;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+form p {
+    margin: -5px 0px 16px 13px;
+}
+
+.special {
+    margin: 2px;
+}
+
+.mobile_no {
+    position: relative;
+    width: 90%;
+}
+
+.mobile_no span {
+    /* margin-right: -50px; */
+
+    /* background-color: #b7b6b6; */
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    top: 36.5px;
+    left: 15px;
+
+}
+
+input[type='number'] {
+    width: 96%;
+    padding-left: 35px;
+}
+
+
+input,
+p {
+    color: rgb(135, 136, 169);
+}
+input::placeholder{
+    color: #aeaeae;
+}
+
+.button {
+    background-color: #275df5;
+    font-weight: 700;
+    font: 18px;
+    border-radius: 23px;
+    padding: 10px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    width: 120px;
+    
+}
+
+a {
+    color: #275df5;
+    text-decoration: none;
+    outline: none;
+
+
+}
+
+.text {
+    font-size: small;
+}
+
+
+.register_box {
+    width: 400px;
+    height: 100px;
+    display: none;
+    place-items: center;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 0 rgb(190, 190, 190);
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: 1s;
+}
+
+.register_box h4 {
+    display: flex;
+    align-items: center;
+}
+
+.register_box img {
+    margin: 0 5px;
+}
+
+@media (max-width:770px) {
+  
+    .before {
+        width: 90%;
+        /* margin: 10px 5px; */
+        padding: 15px;
+    }
+}
+
+@media (max-width:370px) {
+    h2{
+        font-size: 18px;
+    }
+    p{
+        font-size: small;
+    }
+    .input,
+    input[type='number'] {
+        width: 80%;
+    }
+
+}

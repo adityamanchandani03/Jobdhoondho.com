@@ -1,0 +1,281 @@
+.register{
+    padding: 10px 20px;
+    font-size: 12px;
+}
+.Job_details {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+
+}
+
+.job_details_col:first-child {
+    /* background-color: rebeccapurple; */
+    width: 70%;
+}
+
+.job_details_col:last-child {
+    /* background-color: red; */
+    width: 35%;
+}
+
+.Job_details .job_basic_detail {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+}
+
+.Job_details .job_detail_head {
+    margin: 0 0 0px 0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.Job_details .job_detail_head .head_details {
+    width: 70%;
+}
+
+.Job_details .job_detail_head .job_detail_head_img {
+    width: max-content;
+}
+
+.Job_details .job_detail_head .job_detail_head_img img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.Job_details .job_detail_head h3 {
+    margin: 0;
+}
+
+.Job_details .job_basic_detail .job_detail_head .detail_head_name {
+    
+    display: flex;
+    align-items: center;
+}
+.Job_details .job_basic_detail .job_detail_head .detail_head_name p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.Job_details .job_basic_detail .job_detail_head .detail_head_name p:last-child span:first-child{
+   margin:  0 10px;
+   
+}
+
+
+
+/* job detail main */
+.Job_details .job_detail_main {
+    /* margin: 5px 0; */
+    padding: 5px 0;
+    border-bottom: 1px solid #a3a3a3;
+}
+
+.Job_details .job_detail_main .job_detail_main_head span {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+}
+
+.Job_details .job_detail_main .job_detail_main_head span i {
+    margin: 0 5px;
+}
+.Job_details .job_detail_main .job_detail_main_location{
+    word-wrap: unset;
+    overflow: hidden;
+}
+
+/* job detail foot */
+.Job_details .job_detail_foot {
+    margin: 10px 0;
+    width: 100%; 
+}
+
+.Job_details .job_detail_foot ul {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+    margin: 10px;
+    width:100%;
+    }
+
+.Job_details .job_detail_foot ul li {
+    margin: 0 5px;
+}
+
+.Job_details .job_detail_foot ul li span {
+    color: black;
+}
+.Job_details .job_detail_foot .apply-btn{
+   text-align: right;
+}
+
+
+
+
+
+/* benifits & perks section */
+.job_benifits{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gainsboro;
+    background-color: white;
+}
+.job_benifits .benifits_are{
+    margin: 5px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    text-align: center;
+}
+
+
+.job_benifits .benifits_are p{
+  font-size: small;
+}
+.job_benifits p{
+    padding: 5px;
+    
+}
+.job_benifits i{
+    font-size: large;
+}
+.job_benifits .benifits_logo{
+    padding:  10px;
+    border-radius: 50%;
+
+}
+.job_benifits .benifits-col ._1{
+    background-color: rgba(102, 51, 153, 0.205);
+}
+.job_benifits .benifits-col ._2{
+    background-color: rgba(153, 51, 90, 0.205);
+}
+.job_benifits .benifits-col ._3{
+    background-color: rgba(51, 153, 119, 0.205);
+}
+.job_benifits .benifits-col ._4{
+    background-color: rgba(51, 153, 85, 0.205);
+}
+.job_benifits .benifits-col ._5{
+    background-color: rgba(143, 153, 51, 0.205);
+}
+.job_benifits .benifits-col ._6{
+    background-color: rgba(153, 75, 51, 0.205);
+}
+
+
+@media (max-width:970px) {
+    .Job_details {
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+        margin: 10px;
+    }
+    .job_details_col:first-child {
+        /* background-color: rebeccapurple; */
+        width: 100%;
+    }
+    
+    .job_details_col:last-child {
+        /* background-color: red; */
+        width: 100%;
+    }
+    
+    .Job_details .job_basic_detail .job_detail_head .detail_head_name {
+           flex-direction: column;
+           row-gap: 5px;
+           align-items: flex-start;
+        }
+        .Job_details .job_basic_detail .job_detail_head .detail_head_name p:last-child span:first-child{
+            margin:  0 ;
+            
+         }
+        
+        .job_benifits{
+         width: 90%;
+        }
+    }
+@media (max-width:500px) {
+    .Job_details .job_detail_foot ul {
+    font-size: 8px;
+    }
+    .Job_details .job_detail_head .job_detail_head_img img {
+        width: 50px;
+        border-radius: 10px;
+    }
+}
+
+/* Job description  section */
+.job_description{
+    padding: 20px;
+    margin: 10px auto;
+    /* border: 1px solid gainsboro; */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.459);
+    width: 90%;
+}
+.job_description .description_list{
+    font-size: 14px;
+}
+.job_description .description_list span{
+   color: #616161;
+}
+.job_description .description_list li {
+    margin: 5px;
+}
+.job_description .details_key_skills{
+    display: flex;
+    /* justify-content:; */
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 90%;
+    margin: 5px auto;
+   flex-wrap: wrap;
+   padding-bottom: 30px;
+   border-bottom: 1.5px solid #61616141;
+}
+.job_description .details_key_skills li{
+    margin: 0 ;
+    padding: 2px 10px;
+    background-color: #7777776e;
+    border-radius: 10px;
+}
+.job_description .responsi_list{
+    font-size: 14px;
+    margin: 10px 40px ;
+    color: #616161;
+    width: 90%;
+}
+.job_description .responsi_list li{
+    list-style:disc;
+    margin: 5px 0;
+}
+.job_description .details_comp_logos{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+   padding: 10px 5px ;
+}
+@media (max-width:600px) {
+    .job_description{
+    width: 100%;
+    }
+    .job_description .responsi_list{
+        margin: 10px 25px ;
+        width: 95%;
+    }
+    
+}

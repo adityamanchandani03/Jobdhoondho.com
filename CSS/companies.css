@@ -1,0 +1,96 @@
+/* Main Companies Post */
+/* .Companies-post{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.company-post{
+    /* width: 60%; */
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: auto auto;
+    
+}
+.company-post .posts{
+    width: 90%;
+}
+.company-post .main-comapany-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    font-size: 10px;
+}
+.company-post .main-comapany-tags span{
+    padding: 2px 5px;
+    margin:  5px;
+    color: #616161;
+    border-radius: 50px;
+    border: .5px solid  #616161;
+
+}
+.option-list .check-btn-li{
+    border: 1px solid  #000000a6;
+    padding: 2px 10px;
+    margin: 10px 2px;
+    width: max-content;
+    border-radius: 20px;
+  
+}
+@media(max-width:650px) {
+
+    .company-post{
+        grid-template-columns: auto ;
+        
+    }
+   
+}
+@media(max-width:900px) {
+    .jobs-main{
+        flex-direction: column;
+        /* position: relative; */
+    }
+    .jobs-main .filters .filter-head .filter-close-btn{
+        display: block;
+        color: black;
+    }
+    .jobs-main .col1{
+        width:300px;
+      
+    }
+
+
+    .jobs-main .filter-btn button{
+        display: inline-block;
+        font-size: medium;
+         }
+     
+        .jobs-main .filters {
+             position: absolute;
+             /* background: #c9c9c9; */
+             height: max-content;
+             width: 0;
+             top: 0;
+             left: 0;
+             text-align: left;
+             z-index: 100000;
+             transition: 1s;
+             overflow: hidden;
+             
+     
+         }
+         .jobs-main .col2 {
+            width: 100%;
+        }
+        .pagination {
+            width: max-content;
+            margin: 30px auto;
+          
+              }
+         
+
+
+
+}
