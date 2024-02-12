@@ -19,7 +19,7 @@ loginBtn.addEventListener('click', () => {
     return false;
 } 
   else {
-    window.location.href='https://adityamanchandani03.github.io/Jobdhoondho.com/HTML/profile.html';
+    window.location.href='';
     // console.log(window.location.href);
   }
 });
