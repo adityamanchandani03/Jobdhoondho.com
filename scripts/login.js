@@ -12,7 +12,7 @@ loginBtn.addEventListener('click', () => {
   // Check if the username and password are correct9
   if (username === 'aditya_manchandani' && password === 'aditya05@') {
     // Redirect to another page or perform some action
-    window.location.href = '';
+    window.location.href = 'https://adityamanchandani03.github.io/Jobdhoondho.com/HTML/AdityaProfile.html';
   }
   else if (username == "" || password == "" ) {
     alert("all fields are mandatory")
