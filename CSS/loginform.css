@@ -35,7 +35,7 @@
   .signin .content h2 
 {
   font-size: 2em;
-  color:rgb(255, 71, 243);
+  color:rgb(255, 0, 0);;
   text-transform: uppercase;
 }
  .signin .content .form 
@@ -96,13 +96,13 @@
 }
  .signin .content .form .links a:nth-child(2)
 {
-  color: rgb(255, 71, 243);
+  color: rgb(255, 0, 0);;
   font-weight: 600;
 }
  .signin .content .form .inputBox input[type="submit"]
 {
   padding: 5px;
-  background: rgb(255, 71, 243);
+  background: rgb(255, 0, 0);;
   color: #000;
   font-weight: 600;
   font-size: 1.35em;
